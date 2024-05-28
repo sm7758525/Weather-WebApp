@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    background-image: url("/Assets/tree.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#container{
+    height: 460px;
+    width: 310px;
+    border: 2px black solid;
+    border-radius: 10px;
+    color: #fff;
+
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 20px rgba(167, 174, 238, 0.37);
+    border: 2px solid rgba(12, 214, 245, 0.18) ;
+}
+#containerA{
+    height: 7%;
+    margin: 5px;
+    width: 90%;
+    padding: 2px;
+    box-shadow: 0px 0px 20px rgba(167, 174, 238, 0.37);
+    border: 2px solid rgba(12, 214, 245, 0.28) ;
+    border-radius: 6px;
+}
+input {
+    height: 20px;
+    width: 200px;
+    margin-top: 1px;
+    border: 0;
+    background: transparent;
+    outline: none;
+}
+#containerA i{
+    margin-top: 1px;
+}
+#searchBox{
+    display:flex ;
+    align-items: center;
+    justify-content: space-around;
+}
+input::placeholder{
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ri-search-line{
+    font-size: medium;
+}
+button{
+    background: transparent;
+    border: 0;
+    cursor: pointer;    
+    color: #fff;
+}
+.ri-map-pin-line{    
+    color: #fff;
+}
+.weatherBox{
+    text-align: center;
+    margin: 40px 0;
+
+}
+.weatherBox img{
+    width: 60%;
+}
+.weatherBox .temp{
+    position: relative;
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 600;
+    margin: 20px 0 6px -30px;
+}
+.weatherBox .temp span{
+    position: absolute;
+    font-size: 24px;
+    margin-left: 4px;
+}
+.weatherBox .discription{
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: capitalize;
+
+}
+.weatherDetail{
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+}
+.weatherDetail .humidity, 
+.weatherDetail .wind{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.weatherDetail i{
+    font-size: 45px;
+}
